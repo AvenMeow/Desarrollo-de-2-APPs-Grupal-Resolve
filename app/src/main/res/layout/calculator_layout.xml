@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Vistas y campos de texto -->
+    <TextView
+        android:id="@+id/label_num1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Número 1:"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/numero1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ingresa el primer número"
+        android:inputType="numberDecimal" />
+
+    <TextView
+        android:id="@+id/label_num2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Número 2:"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/numero2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ingresa el segundo número"
+        android:inputType="numberDecimal" />
+
+    <!-- Panel de botones -->
+
+    <!-- Resultado -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/boton_sumar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+" />
+
+        <Button
+            android:id="@+id/boton_restar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="-" />
+
+        <Button
+            android:id="@+id/boton_multiplicar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="×" />
+
+        <Button
+            android:id="@+id/boton_dividir"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="÷" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/resultado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Resultado: "
+        android:textSize="18sp" />
+
+</LinearLayout>
